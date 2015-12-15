@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="/css/application.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/application.js"></script>
+
+  <title></title>
+</head>
+<body>
+<head>
+  <title>DBC CRUD Template</title>
+  <link rel="stylesheet" type="text/css" href="/css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <ul class="main-header">
+      <li class="left"><a href="#"><i class="fa fa-stack-exchange"></i>DBC CRUD</a></li>
+      <% if logged_in %>
+      <li class="right">
+        <form action="/sessions/<%= current_user.id %>" method="post">
+          <input type="hidden" name="_method" value="delete">
+          <input type="submit" value="logout" class="session-delete">
+        </form>
+      </li>
+      <% else %>
+      <li class="right"><a href="/users/new">sign up</a></li>
+      <li class="right"><a href="/login">log in</a></li>
+      <% end %>
+    </ul>
+  </header>
+  <div class="logos-filters">
+    <ul class="filter-templates">
+      <li><a href="/templates">templates</a></li>
+      <li><a href="/users">Users</a></li>
+      <li><a href="/templates/new">Ask template</a></li>
+    </ul>
+  </div>
+  <%= yield %>
+</body>
+</html>
+

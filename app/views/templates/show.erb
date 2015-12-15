@@ -1,0 +1,13 @@
+<h1><%= @template.title %></h1>
+<h2>By: <%= @template.user.username %></h2>
+<p><%= @template.body %></p>
+<% if allow_edit(@template) %>
+  <a href="/templates/<%= @template.id %>/edit">edit</a>
+    <form class="template-delete button" action="/templates/<%= @template.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="delete template" class="template-delete">
+  </form>
+<% end %>
+
+
+

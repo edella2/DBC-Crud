@@ -1,0 +1,27 @@
+
+<div class="container">
+  <div class="template-list">
+    <ul>
+      <% @templates.each do |template| %>
+        <li>
+          <div class="full-template">
+            <ol>
+              <li class="template"><a href="<%= "templates/#{template.id}" %>"><%= template.title %></a></li>
+              <li class="template-time">
+              <% if allow_edit(template) %> <!-- this will run a helper method. see helpers -->
+                <a href="/templates/<%= template.id %>/edit">edit</a>
+                  <form class="template-delete button" action="/templates/<%= template.id %>" method="post">
+                  <input type="hidden" name="_method" value="delete">
+                  <input type="submit" value="delete template" class="template-delete">
+                </form>
+              <% end %>
+              Created <%= Time.now - template.created_at %> ago
+              <a href="#"><%= template.user.username %></a>
+              </li>
+            </ol>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
