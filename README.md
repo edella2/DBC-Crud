@@ -1,29 +1,37 @@
-### Build Something Beautiful & Meaningful
+# CRUD skeleton
 
-#### Learning Competencies
-  * Building a web application from scratch
-  * Managing the development process
+###Javascript/Jquery/AJAX
 
-#### Summary
-You can choose whomever you would like to work with for this challenge. You can work by yourself, with a pair, or with a small group (max 4 students). 
+#####See application.js file
 
-You've learned a lot in phase 2: Sinatra, Active Record, JavaScript, Agile, and much more. Each of these tools is useful in its own right, but together, they give you something much more powerful — the ability to build a web application from nothing.
+When write blog link is clicked
+hide write blog button and
+append blog form in its place
+You would click a "enter a new post button"
+the button will be replaced with a form partial
+the form partial when filled out will append a new partial containing the new element you created
+the "enter a new post button will return"
+the form partial will disappear
 
-For this challenge, your assignment is to build something. It can be as practical or trivial as you would want, as long as it is a 100% functional, full-stack web application.
 
-You can build anything you want, provided that it meets the following requirements:
+###Basic routes for users/sessions and a single model
 
-- It has a database
-- It uses an API (what does this mean?! explore!)
-- It is styled
-- It utilizes JavaScript
-- It is deployed to Heroku
+A basic set up with views and controllers was created for a single model - templates.  You can control find and change template to be whatever class you need after creating it.  You will need to do small edits for your edit route and forms to include the information you are supplying.
 
-Once you've come up with an idea, get one of your teachers to approve it.
+This template will display title and body and belongs to a user.
 
-### Resources
-- [List of Public API's](https://www.publicapis.com/)
-- [Mashape - List of API's](https://www.mashape.com/)
-- [Programmable Web](http://www.programmableweb.com/)
-- [Postman - REST Client](https://chrome.google.com/webstore/detail/postman-rest-client-packa/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)
-# DBC-Crud
+###Sessions/Login
+
+Login and creating users is included with this skeleton.  Email should be unique identifier for this.
+
+###Helper Methods
+
+Helper methods have been written to make:
+finding the current user based on session id.
+seeing if a user is logged in with a valid session id.
+seeing if a user can edit a post if their session id matches the template user id.
+
+
+###Questions for template
+
+Ask Eric Dell'Aringa on copperheads slack or email: edella2@gmail.com
