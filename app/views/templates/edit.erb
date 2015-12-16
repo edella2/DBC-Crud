@@ -1,0 +1,9 @@
+<h1>Edit new template information</h1>
+<form action="/templates/<%= @template.id %>" method="post">
+<input type="hidden" name="_method" value="put">
+<input type="text" name="title" value="<%= @template.title %>">
+<input type="text" name="tag" placeholder="enter a new tag">
+<textarea name="body" value="<%= @template.body %>"></textarea>
+<input type="submit" value="Update">
+</form>
+<a href="/templates">Home</a>

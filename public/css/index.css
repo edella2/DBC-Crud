@@ -1,0 +1,129 @@
+.header {
+  color: #ceced4;
+  background-color: #232323;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-kerning: auto;
+  font-size: 24px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-ligatures: normal;
+  font-weight: normal;
+}
+
+.logo {
+  margin: 2em 0em 0em -6em;
+
+}
+
+.header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-header {
+  margin: 0;
+  margin-left: 20%;
+  font-size: 13px;
+  vertical-align: top;
+  height: 24px;
+  color: #;
+  list-style-type: none;
+  display: inline;
+  width: 30%
+}
+
+.main-header li {
+  display: inline;
+}
+
+.logos-filters {
+  margin: 0 20%;
+}
+
+.filter-questions {
+  margin: -2.5em -6em 0 0em;
+  list-style-type: none;
+  display: inline;
+  float: right;
+}
+
+.filter-questions li {
+  display: inline;
+  font-size: 14px;
+  padding: 4px 10px 5px;
+  background-color: #9ea3a9;
+  color: #ffffff;
+}
+
+.filter-questions li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+..questions-feature-tab {
+  margin: -2.5em -6em 0 0em;
+  list-style-type: none;
+  display: inline;
+  float: right;
+}
+
+..questions-feature-tab li {
+  display: inline;
+  font-size: 14px;
+  padding: 4px 10px 5px;
+  background-color: #9ea3a9;
+  color: #ffffff;
+}
+
+..questions-feature-tab li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*End of button*/
+
+header {
+  height: 1.4em;
+}
+ul.main-header li.right {
+  margin: 0em -5em 0em 6em;
+}
+ul.main-header li.left {
+  float: left;
+  margin: 0.7em -14.5em 0em 15em;
+  padding: 0em 0em 0em 0em;
+}
+
+.questions-header {
+  display: inline;
+}
+
+.questions-header ul li {
+    display: inline;
+    margin: 0em -44.9em 0em 48em;
+    color: #767d84;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-width: 2px;
+    border-bottom-color: #eaebec;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.questions-header h3 {
+    margin: 1.3em 0em 0em 10.8em;
+}
+
+.questions-header h3 {
+    font-size: 18px;
+    line-height: 1.3;
+    color: #222426;
+    font-weight: 400;
+}
+
+ul.questions-feature-tab {
+    margin: -0.6em 0em 0em 0em;
+}
+

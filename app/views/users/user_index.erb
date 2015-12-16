@@ -1,0 +1,8 @@
+<div class='container'>
+	<h1>User List</h1>
+	<ul>
+	<%if @user %>
+		<li><a href='/users/<%=user.id%>'><%=@user.username%></a></li>
+	<%end %>
+	</ul>
+</div>
